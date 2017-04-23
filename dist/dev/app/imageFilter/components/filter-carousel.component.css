@@ -1,0 +1,30 @@
+#filterCarousel{
+	white-space: nowrap;
+    overflow-x: auto;
+    position: absolute;
+    bottom: 0px;
+		text-align: center;
+    left: 0px;
+    width: 100%;
+}
+#filterCarousel .carousel-filter-img{
+	height: 135px;
+  width: auto;
+  margin: 5px;
+}
+#filterCarousel .filter-holder {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+#filterCarousel .filter-name{
+	position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 23%;
+    font-weight: bold;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+}

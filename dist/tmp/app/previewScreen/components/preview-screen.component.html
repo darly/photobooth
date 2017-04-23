@@ -1,0 +1,17 @@
+<div class="camera-stream-container">
+	<div id="livePreview" class="standard-border-radius"></div>
+</div>
+<button type="button" class="btn btn-default standard-btn take-picture-btn" 
+	(click)="previewBtnCB()" [hidden]="!isPreviewMode">
+	{{previewBtnText}}
+</button>
+<button type="button" class="btn btn-default standard-btn start-over-btn" 
+	(click)="startOver()" [hidden]="!isPreviewMode">
+	{{startOverText}}
+</button>
+<div class="strip-container">
+	<pb-preview-photo-strip></pb-preview-photo-strip>
+	<div class="strip-divider"></div>
+	<pb-preview-photo-strip></pb-preview-photo-strip>
+</div>
+<pb-shot-countdown></pb-shot-countdown>

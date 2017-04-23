@@ -1,0 +1,6 @@
+<div id="filterCarousel" [hidden]="!isFilterMode" #filtersHolder>
+	<span class="filter-holder" *ngFor="let filter of filters;  let i = index">
+		<canvas class="carousel-filter-img" attr.data-filter_name="{{filter}}"></canvas>
+		<span class="filter-name" (click)="applyFilter(filter)">{{filter}}</span>
+	</span>
+</div>

@@ -1,0 +1,33 @@
+<div class="editMode full-page show-overflow" #tests>
+	<div class="photoHolder">
+		<div class="logo-holder" [hidden]="isFilterMode">
+			<img class="edit-screen-logo" src="assets/images/edit-screen-left-side-img.png">
+		</div>
+		<div class="filter-side-btn" [hidden]="!isFilterMode" (click)="saveSelectedFilter()">
+			{{filterAccept}}
+		</div>
+
+		<canvas #selectedImage class="editing-img">
+			<span>NO</span>
+		</canvas>
+
+		<div class="logo-holder" [hidden]="isFilterMode">
+			<img class="edit-screen-logo" src="assets/images/edit-screen-right-side-img.png">
+		</div>
+		<div class="filter-side-btn right-btn" [hidden]="!isFilterMode" (click)="removeSelectedFilter()">
+			{{filterCancel}}
+		</div>
+	</div>
+	<div class="optionHolder" [hidden]="isFilterMode">
+		<div class="editOption separator" (click)="keepPicture()">
+			{{keepImgText}}
+		</div>
+		<div class="editOption separator" (click)="goToFilterMode()">
+			{{goToFilterText}}
+		</div>
+		<div class="editOption separator" (click)="retakePicture()">
+			{{retakeText}}
+		</div>
+	</div>
+</div>
+<!--<pb-loading-overlay></pb-loading-overlay>-->

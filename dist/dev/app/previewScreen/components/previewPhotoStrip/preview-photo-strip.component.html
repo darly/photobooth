@@ -1,0 +1,13 @@
+<div class="photo-strip-preview standard-btn" [hidden]="!isPreviewMode">
+	<div class="logo">
+		<!--<img class="logo-top" src="assets/images/wedding_logo_names.png">-->
+		<img class="logo-top" src="assets/images/photo-strip-top-logo.png">
+	</div>
+	<div [class.show-empty-photo]="photo.photoSrc === ''" *ngFor="let photo of photoStrip; let i = index">
+		<img class="photo-strip-photo" *ngIf="photo.photoSrc !== '' " src="{{photo.photoSrc}}" (click)="editImage(photo,i)"/>
+	</div>
+	<div class="logo bottom-item-flex">
+		<!--<img class="logo-bottom" src="assets/images/wedding_logo_text.png">-->
+		<img class="logo-bottom" src="assets/images/photo-strip-bottom-logo.png">
+	</div>
+</div>

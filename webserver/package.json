@@ -1,0 +1,15 @@
+{
+  "name": "photobooth",
+  "version": "1.0.0",
+  "description": "Photobooth for my wedding",
+  "author": "Darly Paredes <paredesdarly@gmail.com>",
+  "bin": {
+    "module-name": "./bin/module-name"
+  },
+  "scripts": {
+    "start": "http-server -a localhost -pb"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

@@ -1,0 +1,70 @@
+.editMode .photoHolder{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+}
+.editMode .optionHolder{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    height: 72px;
+    background-color: rgba(178,145,114, 0.5);
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.optionHolder .editOption{
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+    text-align: center;
+    height: 100%;
+}
+.optionHolder .editOption.separator:not(:last-child){
+	 border-right: 5px solid #fff;
+}
+.optionHolder .editOption:before{
+	content:'';
+    height:100%;
+    display:inline-block;
+    vertical-align:middle;
+}
+.editMode img.editing-img{
+	width: 640px;
+	height: 640px;
+	border-right: 5px solid #000;
+	border-radius: 5px 5px 0 0;
+    margin: 0 20px;
+}
+.filter-side-btn{
+    background-color: rgba(178,145,114, 0.5);
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 25px;
+    text-align: center;
+}
+.filter-side-btn.right-btn{
+    border-radius: 0 10px 10px 0;
+}
+.editing-img{
+    max-width: 50%;
+    margin: 0 5px;
+    height: auto !important;
+		border-radius: 15px;
+}
+.edit-screen-logo{
+    width: 100%;
+}

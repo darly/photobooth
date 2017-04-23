@@ -1,0 +1,133 @@
+@media print {
+    .photo-strip-preview.standard-btn .logo{
+        display: block;
+    }
+    div.photo-strip-preview.standard-btn{
+        top: 0px;
+        height: 655px;
+        transform: translate(0, 0);
+        max-width: none;
+        box-shadow: none;
+        width: 46%;
+        left: 0px;
+        background-color: #fff;
+    }
+    .strip-container pb-preview-photo-strip:last-child div.photo-strip-preview{
+        display: flex;
+        left: initial;
+        right: 0px;
+    }
+    .take-picture-btn, .start-over-btn, .camera-stream-container{
+        display: none !important;
+    }
+    .strip-container div.strip-divider{
+        display: block;
+    }
+}
+@font-face {
+  font-family: 'halflings';
+  src: url('/assets/fonts/glyphicons-halflings-regular.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'alexbrush';
+  src: url('/assets/fonts/AlexBrush-Regular.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'caviardreams';
+  src: url('/assets/fonts/CaviarDreams.ttf')  format('truetype');
+}
+
+ul {
+  margin: 10px 0 0;
+  padding: 0 0 0 20px;
+}
+html body {
+    color: #fff;
+    overflow: hidden;
+    font-family: 'caviardreams', "alexbrush","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+html body .alex-brush{
+    font-family: 'alexbrush', "caviardreams", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+html body .caviar-dreams{
+    font-family: 'caviardreams', "alexbrush","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.strip-container pb-preview-photo-strip:last-child .photo-strip-preview{
+    display: none;
+}
+.loader {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.5);
+}
+.full-page {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    overflow: hidden;
+}
+.show-overflow{
+    overflow: visible;
+}
+.standard-border-radius{
+    border-radius: 15px;
+}
+html .standard-btn{
+    font-size: 24px;
+}
+.standard-btn {
+    margin: auto;
+    position: absolute;
+    color: #fff;
+    background-color: rgba(178,145,114, 0.5);
+    font-weight: bold;
+    border: 1px solid #fff;
+    font-size: 24px;
+}
+.text-align-center{
+    text-align: center;
+}
+.no-float-btn{
+    position: static;
+}
+.hide{
+    display: none;
+}
+[hidden] {
+  display: none !important;
+}
+.config-background{
+    background: linear-gradient(135deg, #2f4552 0%,#556892 100%);
+}
+.title{
+    font-size: 42px;
+}
+
+.textbox {
+    border: 1px solid #c4c4c4;
+    height: 25px;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px #d9d9d9;
+}
+
+.textbox:focus {
+    outline: none;
+    border: 1px solid #7bc1f7;
+    box-shadow: 0px 0px 8px #7bc1f7;
+}
+.add-divider-top{
+    border-top: 1px solid #FFF;
+}

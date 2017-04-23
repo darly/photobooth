@@ -1,0 +1,36 @@
+.single-config-holder{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    margin: 3px 5%;
+    padding-bottom: 5px;
+}
+.config-title{
+	padding-left: 5%;
+	font-size: 24px;
+}
+.config-title.config-screen-title{
+	font-size: 30px;
+}
+.config-value-holder{
+	padding-top: 5px;
+}
+.config-title, .config-value-holder{
+	display: inline-block;
+	width: 49%;
+}
+.textbox{
+	width: 90%;
+}
+.config-content{
+	max-height: 100%;
+    overflow-y: auto;
+}
+.hide-splash-screen-config{
+	display: none;
+}
+.config-btn-holder{
+	margin: 3px 5%;
+	text-align: right;
+	padding-top: 6px;
+}

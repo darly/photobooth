@@ -1,0 +1,132 @@
+<div class="config-screen config-background full-page">
+	<div class="config-content">
+		<div class="title">
+			Configuration(Not functional yet!)
+		</div>
+		<div class="single-config-holder ">
+			<span class="config-title config-screen-title">
+				Splash Screen
+			</span>
+			<span class="config-value-holder">
+				<button type="button" class="btn btn-primary" data-toggle="button" (click)="splashScreenToggle($event)">
+					{{splashScreenToggleText}}
+				</button>
+			</span>
+		</div>
+		<div [class.hide-splash-screen-config]="hideSplashScreenConfig()">
+			<div class="single-config-holder">
+				<span class="config-title">
+					Title
+				</span>
+				<span class="config-value-holder">
+					<input class="form-control" type="text" name=""/>
+				</span>
+			</div>
+			<div class="single-config-holder">
+				<span class="config-title">
+					Langugues
+				</span>
+				<span class="config-value-holder">
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-primary active">
+							<input type="checkbox" autocomplete="off" checked> English
+						</label>
+						<label class="btn btn-primary">
+							<input type="checkbox" autocomplete="off" checked> Spanish
+						</label>
+					</div>
+				</span>
+			</div>
+			<div class="single-config-holder">
+				<span class="config-title">
+					Sub-text
+				</span>
+				<span class="config-value-holder">
+					<input class="form-control" type="text" name=""/>
+				</span>
+			</div>
+			<div class="single-config-holder">
+				<span class="config-title">
+					Background
+				</span>
+				<span class="config-value-holder">
+					<input class="btn btn-primary" type="file">
+				</span>
+			</div>
+		</div>
+		<div class="single-config-holder add-divider-top">
+			<span class="config-title config-screen-title">
+				Preview Screen
+			</span>
+		</div>
+		<div class="single-config-holder add-divider-top">
+			<span class="config-title config-screen-title">
+				Edit Screen
+			</span>
+		</div>
+		<div class="single-config-holder">
+			<span class="config-title">
+				Left side logo
+			</span>
+			<span class="config-value-holder">
+				<span class="config-value-holder">
+					<input class="btn btn-primary" type="file">
+				</span>
+			</span>
+		</div>
+		<div class="single-config-holder">
+			<span class="config-title">
+				Right side logo
+			</span>
+			<span class="config-value-holder">
+				<span class="config-value-holder">
+					<input class="btn btn-primary" type="file">
+				</span>
+			</span>
+		</div>
+		<div class="single-config-holder add-divider-top">
+			<span class="config-title config-screen-title">
+				Photo Strip
+			</span>
+		</div>
+		<div class="single-config-holder">
+			<span class="config-title">
+				Top image
+			</span>
+			<span class="config-value-holder">
+				<span class="config-value-holder">
+					<input class="btn btn-primary" type="file">
+				</span>
+			</span>
+		</div>
+		<div class="single-config-holder">
+			<span class="config-title">
+				Bottom image
+			</span>
+			<span class="config-value-holder">
+				<span class="config-value-holder">
+					<input class="btn btn-primary" type="file">
+				</span>
+			</span>
+		</div>
+		<div class="single-config-holder add-divider-top">
+			<span class="config-title config-screen-title">
+				Filters
+			</span>
+		</div>
+		<div class="single-config-holder">
+			<span class="config-title">
+				Choose what filters you would like to use.
+			</span>
+			<span class="config-value-holder">
+				<span class="config-value-holder">
+					Multi-select drop? or a screenshot of all the filters.
+				</span>
+			</span>
+		</div>
+		<div class="add-divider-top config-btn-holder">
+			<button class="btn btn-cancel" (click)="goToConfigWelcome()">Cancel</button>
+			<button class="btn btn-primary" (click)="saveConfig()">Save</button>
+		</div>
+	</div>
+</div>

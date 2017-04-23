@@ -1,0 +1,30 @@
+.config-welcome-screen{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.config-welcome-screen .standard-btn{
+	background-color: #02BCD5;
+	width: 50%;
+    border-radius: 35px;
+    padding: 15px 0;
+    margin: initial;
+}
+.config-welcome-screen .config-welcome-content-holder{
+	height: 300px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.config-welcome-screen .logo-holder{
+	background-color: #fff;
+    padding: 5px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.config-welcome-screen .logo-holder img{
+	width: 42px;
+}
