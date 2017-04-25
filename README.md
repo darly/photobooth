@@ -2,13 +2,15 @@
 
 ## TL;TR (Too long; to read)
 
-This section is for everyone that feels that the readme is too long (I personally hate long readme but it’s a necessary evil)
-To run the project ensure that the machine has a webcam
-Install nodejs from https://nodejs.org
-Run the following two commands inside of the folder you put these files in. These commands will install the app and then run it
-npm install
-npm start
-Its suggested to run the application inside of the latest version of chrome.
+This section is for everyone that feels that the readme is too long (I personally hate long readme but it’s a necessary evil):
+1. To run the project ensure that the machine has a webcam
+2. Install nodejs from https://nodejs.org
+3. Run the following two commands inside of the folder you put these files in. These commands will install the app and then run it
+     
+     `npm install`
+     
+     `npm start`
+4. Its suggested to run the application inside of the latest version of chrome.
 
 ## Available commands 
 
@@ -31,8 +33,9 @@ This command brings up a node server, and also watches your code for any changes
      npm build
 
 The above commands creates a build and puts it in the dist/prob folder. This is a minified and compiled version of the app that is easily transferable to other devices. The only caveat is that in order to run this build you must do one of the following:
-Run this on a localhost (I used http-server to create my own node server to run this on a raspberry pi)(https://github.com/indexzero/http-server). I have included a modified version of this inside “webserver” folder.
-Put this in a server/webhost that supports https and serve it from that website.
+ - Run this on a localhost (I used http-server to create my own node server to run this on a raspberry pi)(https://github.com/indexzero/http-server). I have included a modified version of this inside “webserver” folder.
+ - Put this in a server/webhost that supports https and serve it from that website.
+
 You might be asking yourself why do you need to do this? Can you not just run the index.html in chrome and it should just work? Well that’s what I thought too, but in order for the browser to access your webcam it needs to be behind a secure connection for the user privacy read more about this here: https://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features
 
 ## Overview
