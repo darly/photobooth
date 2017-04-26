@@ -16,6 +16,7 @@ export class PhotoBoothStatus {
 		// share() allows multiple subscribers
 		this.status = TYPES.SPLASHSCREEN.MODENAME;
 	}
+	//this helper funcs are to let the screens know in what mode they are in
 	get isPictureMode(): boolean{
 		return this.getStatus() === TYPES.PICTUREMODE.MODENAME;
 	}
@@ -28,6 +29,7 @@ export class PhotoBoothStatus {
 	get isFilterMode(): boolean {
 		return this.getStatus() === TYPES.FILTERMODE.MODENAME;
 	}
+	//This is the main logic behind the pub/sub we use
 	changeStatus ( newStatus: string ) {
 		this.status = newStatus;
 		if ( this._observer && this._observer.next ) {

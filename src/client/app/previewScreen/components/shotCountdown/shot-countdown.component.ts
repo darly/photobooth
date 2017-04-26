@@ -23,6 +23,7 @@ export class ShotCountdownComponent implements OnInit, OnDestroy {
 		this.isPictureMode = false;
 		this.countdownValue = 3;
 	}
+
 	setIsPictureMode() {
 		this.isPictureMode = this._photoBoothStatus.isPictureMode;
 		this.checkIfPictureMode();
@@ -46,7 +47,9 @@ export class ShotCountdownComponent implements OnInit, OnDestroy {
 			this.countdown();
 		}, 1000);
 	}
+	//the countdown logic
 	countdown(){
+		//if the count down is 1 then 3 seconds have passed
 		if (this.countdownValue === 1) {
 			clearInterval(this._countdownInterval);
 			this._webcamJs.takePicture();

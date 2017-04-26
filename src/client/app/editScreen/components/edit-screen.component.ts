@@ -39,6 +39,7 @@ export class EditScreenComponent implements AfterViewInit, OnInit, OnDestroy {
 		private _langText: LangText,
 		private _imageFilter: ImageFilter
 	) {
+		//apply the appropiate language to the buttons
 		this.filterAccept = this._langText.getText(LANG.TYPES.keepFilter);
 		this.filterCancel = this._langText.getText(LANG.TYPES.cancelFilter);
 
@@ -52,6 +53,9 @@ export class EditScreenComponent implements AfterViewInit, OnInit, OnDestroy {
 	    }
 	  });
 	}
+	//started to play around with setters and getters but now i under stand that they should only be used
+	//when a parent component wants to change something
+	//TODO remove setters and getters
 	set keepImgText(keepImgText:string){
 		this._keepImgText = keepImgText;
 	}
@@ -96,6 +100,7 @@ export class EditScreenComponent implements AfterViewInit, OnInit, OnDestroy {
 		this._imageFilter.updateSelectedImage(this.selectedImage.nativeElement, this.selectedPhoto.originalPhotoSrc);
 	}
 	ngOnInit() {
+		//we need to subcribe to the router to get the url params
     this._sub = this._route.params.subscribe(params => {
        this.urlId = +params['stripIndex']; // (+) converts string 'id' to a number
 			 this.setSelectedPhoto();
@@ -105,10 +110,12 @@ export class EditScreenComponent implements AfterViewInit, OnInit, OnDestroy {
 			status => this.setIsFilterMode()
 		);
 	}
+	//we get the selected image from the photo strip
 	setSelectedPhoto (){
 		var id: number = this.urlId;
 		this.selectedPhoto = this._photoStrip.strip[id];
 	}
+	//TODO check code base if being used if not remove it
 	stringToArrayOfString(str: string): Array<string> {
 		var arrOfStr: Array<string> = [];
 		for (var i = 0; i < str.length; i++ ){

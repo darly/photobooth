@@ -19,9 +19,10 @@ export class SplashScreenComponent {
 		private _photoBoothStatus: PhotoBoothStatus,
 		private _langText: LangText
 	) {}
-
+	//binded to btn in view, when users btn we take them to the preview and save the langugue they choose
 	goToPreview( lang: string ): void {
 		this._langText.selectedLang = lang;
+		//we tell the router to change screens
 		this._router.navigate(['PreviewScreen']);
 		this._photoBoothStatus.changeStatus(TYPES.PREVIEWMODE.MODENAME);
 	}

@@ -31,9 +31,10 @@ export class FilterCarousel implements OnInit, OnDestroy, AfterViewInit {
 			}
 		);
 	}
+	//after the view is initilized we apply the sample filters to the preview images
 	ngAfterViewInit(){
 		var filterImages = this.filterHolder.nativeElement.querySelectorAll('.filter-holder canvas');
-
+		//TODO move to a separate function
 		for (var i = 0; i < filterImages.length; i++){
 			this._imageFilter.addFilter(
 				filterImages[i],

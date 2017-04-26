@@ -13,6 +13,7 @@ import {ShotCountdownComponent} from './previewScreen/components/ShotCountdown/s
 import {EditScreenComponent} from './editScreen/components/edit-screen.component';
 import {FilterCarousel} from './imageFilter/components/filter-carousel.component';
 
+//Adding the components
 @NgModule({
   imports: [BrowserModule, AppRoutingModule],
   declarations: [

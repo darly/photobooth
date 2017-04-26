@@ -4,7 +4,10 @@ import {Router} from '@angular/router';
 declare var Webcam: any;
 
 @Injectable()
-
+/*
+ *This service is a wrapper around the webcam plugin
+ *https://github.com/jhuckaby/webcamjs
+*/
 export class WebcamJsService{
 	constructor( private _photoStrip: PhotoStrip, private _router: Router ) { }
 

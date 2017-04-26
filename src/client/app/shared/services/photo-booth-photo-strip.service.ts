@@ -34,6 +34,9 @@ export class PhotoStrip {
 		}
 		return nextEmpty;
 	}
+	//gets the index of the next empty photo
+	//returns -1 if there is no empty slots
+	//if there are no empty slots it means that the user can print
 	getNextEmptyPhotoNumber(): number {
 		for (var i = 0; this._strip.length > i; i++) {
 			if ( this.strip[i].photoSrc === '' ) {
@@ -42,6 +45,7 @@ export class PhotoStrip {
 		}
 		return -1;
 	}
+	//to reset the strip we need to clear all photos
 	resetStrip() {
 		for (var i = 0; this._strip.length > i; i++) {
 			this.strip[i].resetPhoto();
