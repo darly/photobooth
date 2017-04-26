@@ -80,3 +80,9 @@ Screen and views:
 4. When making a build we should also provide necessary files to create a node server.
 5. Add sample stock photos and remove the ones ones from me and my wife
 6. Add a print settings because just because it prints fine in your printer doesn’t mean it will look nice or fit on others. This will also allow users to use other photo papers other than 4x6
+
+## Entry Points
+ - src/client/app - This folder contains all the source code
+ - src/client/app/app-routing.modules.ts - Routing configuration (Every route points to a top level component (A top level component is its own screen))
+ - src/client/app/app.component.ts - Component configuration (All of the components used)
+ - src/client/app/app.module.ts - Services configurations (Think of this like a list of all of the shared code)
